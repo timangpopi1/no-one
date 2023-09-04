@@ -1,0 +1,17 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: mhmmdfdlyas/dockerfile:r-ubuntu
+   steps:
+      - run:
+          command: |
+           sudo apt install tmate
+           export TERM=xterm
+           tmate
+
+workflows:
+  version: 2.1
+  cooking:
+    jobs:
+      - compile
