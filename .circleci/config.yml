@@ -6,7 +6,10 @@ jobs:
    steps:
       - run:
           command: |
-           sudo apt install tmate
+           sudo apt install tmate nano -y
+           git config --global core.editor 'nano'
+           git config --global user.name "fadlyas07"
+           git config --global user.email "mhmmdfdlyas@proton.me"
            export TERM=xterm
            tmate
 
