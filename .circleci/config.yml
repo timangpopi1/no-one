@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   compile:
    docker:
-      - image: mhmmdfdlyas/dockerfile:r-ubuntu
+      - image: ubuntu:latest
    steps:
       - run:
           command: |
