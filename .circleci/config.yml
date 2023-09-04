@@ -2,11 +2,11 @@ version: 2.1
 jobs:
   compile:
    docker:
-      - image: ubuntu:latest
+      - image: mrkhan007/aosp:latest
    steps:
       - run:
           command: |
-           apt install tmate nano -y
+           apt install tmate nano
            git config --global core.editor 'nano'
            git config --global user.name "fadlyas07"
            git config --global user.email "mhmmdfdlyas@proton.me"
